@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Pizza Haven{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <header>
+        <!-- Логотип -->
+        <div class="logo">
+            <a href="{% url 'home' %}"><h1>PIZZA HAVEN</h1></a>
+        </div>
+    </header>
+    
+    <!-- Навигационное меню -->
+    <nav>
+        <ul class="category-list">
+            {% for category in categories %}
+                <li>
+                    <a href="{% url 'category_view' category.id %}">{{ category.category_name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <img src="static/images/IMG_6665.PNG" alt="banner">
+    </div>
+
+    <main>
+        {% block content %}
+            <div id="pizza">
+                
+            </div>
+        {% endblock %}
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

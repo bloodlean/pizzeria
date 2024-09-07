@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 90px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+}
+
+/* Стили для заголовка логотипа */
+.logo h1 {
+    margin: 0; /* Убираем внешние отступы */
+    font-size: 30px; /* Размер шрифта */
+    font-family: "Inter", sans-serif;
+    color: #333; /* Цвет текста */
+}
+
+
+.logo a {
+    text-decoration: none;
+}
+
+nav {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.category-list {
+    list-style: none; /* Убираем маркеры у элементов списка */
+    background-color: rgb(213, 211, 211);
+    padding: 15px 80px;
+    margin: 0; /* Убираем внешние отступы */
+}
+
+.category-list li {
+    display: inline; /* Отображение элементов списка в строку */
+    margin: 0 10px; /* Отступы между элементами списка */
+}
+
+.category-list a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #333; /* Цвет ссылок */
+}
+
+.category-list a:hover {
+    color: #FF4D00;
+}
+
+/* Стили для контейнера баннера */
+.banner {
+    align-items: center; /* Центрирование содержимого по вертикали */
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.banner img {
+    border-radius: 25px; /* Закругляет все углы изображения */
+    width: 89%; /* Измените на нужный процент или пиксели */
+    height: auto; /* Сохраняет пропорции изображения */
+}
+
